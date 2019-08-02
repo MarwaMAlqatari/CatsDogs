@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="report.js"></script>
+
+   <title>List</title>
+    <link rel="stylesheet" href="report.css">
+    
+</head>
+<body>
+<form class="form-style-7">
+<ul>
+<li>
+    <label for="photo">Photo</label>
+    <input type="file" name="pic" accept="image/*">
+    <span>Upload the picture here</span>
+</li>
+<li>
+    <label for="date">Time and Date</label>
+    <input type="date" name="datetime">
+    <span>Put the date of this photo</span>
+</li>
+<li>
+    <label for="text">location</label>
+    <input type="text" name="text" maxlength="5000">
+    <span>Put the location of the animal</span>
+</li>
+<li>
+    <label for="condition">condition</label>
+    <textarea id="condition" name="condition" onkeyup="adjust_textarea(this)"></textarea>
+    <span>Put the conditions of the animal</span>
+</li>
+<li>
+    <label for="comments">comments</label>
+    <textarea id="comments" name="bio" onkeyup="adjust_textarea(this)"></textarea>
+    <span>This is to help us find it!</span>
+</li>
+<li>
+    <input type="submit" value="Submit" >
+</li>
+</ul>
+</form>
+    
+</body>
+</html>
